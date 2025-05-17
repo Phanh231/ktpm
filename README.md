@@ -1,4 +1,4 @@
- ##Project: Xây dựng website quản lý thư viện
+  ## Project: Xây dựng website quản lý thư viện
  ## Tổng quan dự án  
 Trong thời đại công nghệ phát triển mạnh mẽ, việc quản lý thư viện bằng các phương pháp truyền thống như sổ sách, file Excel... đang bộc lộ nhiều hạn chế: dễ sai sót, khó tìm kiếm, mất thời gian và thiếu tính tự động. Để khắc phục những bất cập đó, nhóm chúng tôi phát triển **Hệ Thống Quản Lý Thư Viện Trực Tuyến**, một nền tảng giúp quản lý sách, người dùng, mượn/trả sách một cách khoa học, hiệu quả và tiện lợi.
 
