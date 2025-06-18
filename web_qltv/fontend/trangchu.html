@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang Chủ - Quản lý sách</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="trangchu.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <img src="logo.png" alt="Logo" class="logo"> <!-- Thay bằng ảnh logo của bạn -->
+      <nav>
+        <a href="muonsach.html">Mượn sách</a>
+        <a href="trangchu.html">Quản lý sách</a>
+       
+      </nav>
+      <div class="search-box">
+        <input type="text" placeholder="Tìm kiếm sách..." id="searchInput">
+        <button onclick="searchBook()">Tìm</button>
+      </div>
+      <div class="logout">
+        <img width="25" height="25" src="https://img.icons8.com/ios/50/exit--v1.png" alt="exit--v1"/>
+      <a href="index.html">logout</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="m1">
+    <h1>sách hiện có trong thư viện</h1>
+    <br>
+    <table>
+      <thead>
+        <tr>
+          <th>Tên Sách</th>
+          <th>Mã sách</th>
+          <th>Tác giả</th>
+          <th>tùy chỉnh</th>
+        </tr>
+      </thead>
+      <tbody id="book-table">
+        <tr>
+          <td>Lập trình Web nâng cao</td>
+          <td>WEB123</td>
+          <td>Phenikaa University</td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Cơ sở dữ liệu</td>
+          <td>DB456</td>
+          <td>Phenikaa University</td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Kĩ thuật phần mềm</td>
+          <td>kt13</td>
+          <td>Phenikaa University</td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Hệ điều hành</td>
+          <td>hdh01</td>
+          <td>Phenikaa University</td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Lập trình hướng đối tượng</td>
+          <td>oop25</td>
+          <td>Phenikaa University</td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+    <button class="create-btn" onclick="createBook()">Create</button>
+  </main>
+
+   <footer>
+        <h3>Liên hệ với chúng tôi</h3>
+        <p><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/address--v1.png" alt="address--v1"/>
+        <b>Địa Chỉ: </b> Số 47 Bà Triệu, Hoàn Kiếm, Hà Nội, Việt Nam
+        </p>
+        <p><img width="25" height="25" src="https://img.icons8.com/ios/50/apple-mail.png" alt="apple-mail"/> 
+        <b>Email: </b>trungtamthuvien@gmail.com
+        </p>
+        <p><img width="25" height="25" src="https://img.icons8.com/ios/50/ringer-volume.png" alt="ringer-volume"/>
+        <b>Điện thoại: </b>028.38.969.661
+        </p>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

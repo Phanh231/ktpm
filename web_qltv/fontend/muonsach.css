@@ -1,0 +1,181 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+}
+
+/*header*/
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color:  #007aad;
+}
+
+/* tìm kiếm */
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.search-box input {
+   padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 7px 12px;
+  background-color: #007aad;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+
+
+/* đăng xuất */
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logout a {
+  color: #d9534f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logout a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+main.m1 {
+  padding: 40px;
+  text-align: center;
+}
+
+main h1 {
+  margin-bottom: 20px;
+}
+
+/* bảng */
+table {
+  margin: auto;
+  width: 90%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #00bcd4;
+  color: white;
+}
+
+table td {
+  text-align: center;
+}
+
+/* nút mượn sách */
+button[class^="ms"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[class^="ms"]:hover {
+  background-color: #218838;
+}
+
+/* nút xem sách mượn */
+.xsm {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.xsm:hover {
+  background-color: #e68900;
+}
+
+#xem_sach_muon {
+    display: none;
+    margin-top: 20px;
+}
+
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer h3 {
+  color: #1abc9c;
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer img {
+  vertical-align: middle;
+}
+

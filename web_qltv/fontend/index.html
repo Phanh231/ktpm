@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="vn">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>qltv</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <header>
         <div class="use1"><img src="logo.png" alt="logo" width="60" height="60"></div>
         <nav class="nav1">
             <ul>
-                <li><a href="#">Trang Chủ</a></li>
-                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="gthieu.html">Giới Thiệu</a></li>
             </ul>
     </nav>
-        <div class="user3"><a href="#">Đăng Nhập/Đăng Kí</a></div>
+        <div class="user3"><a href="#" id="authButton">Đăng Nhập/Đăng Kí</a></div>
     </header>
     
     <main>
@@ -30,8 +32,7 @@
                 tự hào dân tộc, đồng thời mang đến những kinh nghiệm và minh triết thực tiễn 
                 để người Việt Nam hiện đại có thể học hỏi, xây dựng bản lĩnh và hòa nhập vào 
                 dòng chảy chung của thế giới, khẳng định vị thế quốc tế của dân tộc.</p>
-            
-            <a href="#" class="ms1">Mượn Sách</a>    
+                
             </div>
         </div>
 
@@ -48,7 +49,6 @@
                     ngày sinh Nguyễn Du càng khắc sâu vị thế của "Truyện Kiều" như một di sản văn hóa vĩ đại, 
                     đồng thời tôn vinh Nguyễn Du là Đại thi hào dân tộc và Danh nhân văn hóa thế giới.</p>
 
-                <a href="#" class="ms2">Mượn Sách</a>
             </div>
         </div>
 
@@ -62,7 +62,37 @@
                     sinh viên các ngành kỹ thuật, đặc biệt là tin học. Sách trình bày ngôn ngữ lập trình C một cách 
                     có hệ thống, từ những kiến thức cơ bản nhất đến các kỹ thuật nâng cao.</p>
 
-                <a href="#" class="ms3">Mượn Sách</a>
+            </div>
+        </div>
+
+        <div class="main4">
+            <div class="photo4"><img src="oop.png" alt="oop"></div>
+            <div class="nd4">
+                <h3 class="td4">Giáo trình: Lập trình hướng đối tượng</h3>
+
+                <p class="n4">Giáo trình: Lập trình hướng đối tượng là tài liệu thiết yếu dành cho những ai muốn trở thành 
+                    nhà phát triển phần mềm xuất sắc, bởi Lập trình hướng đối tượng (OOP) chính là nền tảng cốt lõi của ngành 
+                    công nghiệp phần mềm hiện đại. Cuốn sách này sẽ trang bị cho bạn những kiến thức và kỹ năng cần thiết để 
+                    nắm vững yêu cầu thực tiễn, giúp bạn làm chủ OOP và phát triển các phần mềm phổ biến. Bạn sẽ học cách tận
+                    dụng công nghệ một cách hiệu quả, áp dụng các nguyên tắc như tái sử dụng, kế thừa, đóng gói, trừu tượng và 
+                    đa hình để tạo ra mã nguồn chất lượng cao. Không chỉ vậy, giáo trình còn giúp bạn phát triển tư duy 
+                    giải quyết vấn đề, rèn luyện khả năng phân tích và tìm kiếm giải pháp tối ưu cho mọi thách thức lập trình...</p>
+
+            </div>
+        </div>
+
+        <div class="main5">
+            <div class="photo5"><img src="tamlihoc.png" alt="tamlihoc"></div>
+            <div class="nd5">
+                <h3 class="td5">Tâm Lý Học</h3>
+
+                <p class="n5">Bạn muốn giải mã những bí ẩn của tâm trí con người? Cuốn sách Tâm lý học của Trần Nhựt Tân sẽ đưa bạn vào 
+                    thế giới của ngành khoa học hấp dẫn này, chuyên sâu nghiên cứu về hoạt động, tinh thần và tư tưởng của con người. 
+                    Đặc biệt, bạn sẽ khám phá cách những yếu tố như cảm xúc, ý chí và hành động định hình nên bản thân chúng ta. 
+                    Thông qua cuốn sách này, bạn sẽ không chỉ thấu hiểu sâu sắc hơn về tâm lý của chính mình mà còn có được cái nhìn 
+                    toàn diện về cách con người tương tác với thế giới xung quanh. Đây là tài liệu thiết yếu cho bất kỳ ai muốn mở rộng 
+                    kiến thức và ứng dụng tâm lý học vào đời sống.</p>
+
             </div>
         </div>
     </main>
@@ -79,5 +109,6 @@
         <b>Điện thoại: </b>028.38.969.661
         </p>
     </footer>
+    <script src="login.js"></script> 
 </body>
 </html>

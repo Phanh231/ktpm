@@ -1,0 +1,49 @@
+<div id="authModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="auth-forms">
+            <!--Đăng nhập-->
+            <form id="loginForm" class="auth-form active">
+                <h2>Đăng Nhập</h2>
+                <div class="message-area" id="loginMessage"></div> <div class="input-group"></div> <!--dùng để hiển thị thông báo-->
+
+                <div class="form-group">
+                    <label for="loginUsername">Tên đăng nhập:</label>
+                    <input type="text" id="loginUsername" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Mật khẩu:</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <button type="submit">Đăng Nhập</button>
+                <p>Chưa có tài khoản? <a href="#" id="showRegister">Đăng ký ngay!</a></p>
+            </form>
+
+            <!--đăng kí-->
+            <form id="registerForm" class="auth-form">
+                <h2>Đăng Ký</h2>
+                <div class="message-area" id="registerMessage"></div> <!--dùng để hiển thị thông báo-->
+
+                <div class="form-group">
+                    <label for="regUsername">Tên đăng nhập:</label>
+                    <input type="text" id="regUsername" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email:</label>
+                    <input type="email" id="regEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Mật khẩu:</label>
+                    <input type="password" id="regPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="regConfirmPassword">Xác nhận mật khẩu:</label>
+                    <input type="password" id="regConfirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit">Đăng Ký</button>
+                <p>Đã có tài khoản? <a href="#" id="showLogin">Đăng nhập!</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+

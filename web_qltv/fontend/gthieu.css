@@ -1,0 +1,91 @@
+/* gthieu.css */
+
+/* Styles for the content blocks on the introduction page */
+.main1, .main2, .main3 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Khoảng đệm bên trong mỗi khối */
+    margin-bottom: 20px; /* Khoảng cách giữa các khối */
+    display: flex; /* Dùng flexbox để căn chỉnh nội dung nếu cần */
+    flex-direction: column; /* Nội dung xếp dọc */
+    align-items: flex-start; /* Căn trái nội dung */
+}
+
+/* Adjustments for the specific content divs */
+.nd1, .nd2, .nd3 {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của khối cha */
+}
+
+/* Styles for titles within the content blocks */
+.td1, .td2, .td3 {
+    font-size: 2em; /* Kích thước lớn hơn cho tiêu đề */
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center; /* Căn giữa tiêu đề */
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.td1::after, .td2::after, .td3::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px; /* Độ dài của đường kẻ dưới tiêu đề */
+    height: 3px;
+    background-color: #007bff;
+    border-radius: 2px;
+}
+
+/* Styles for paragraphs within the content blocks */
+.n1, .n2, .n3 {
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.7;
+    text-align: justify; /* Căn đều hai bên */
+    margin-bottom: 0; /* Loại bỏ margin dưới cùng nếu không có gì theo sau */
+}
+
+/* Specific styling for the first block (Chào mừng) if it needs a different layout */
+.main1 {
+    text-align: center; /* Căn giữa nội dung chào mừng */
+    align-items: center;
+}
+
+.main1 .nd1 {
+    max-width: 800px; /* Giới hạn chiều rộng của đoạn văn chào mừng */
+}
+
+/* Responsive Design for Introduction Page Content */
+@media (max-width: 768px) {
+    .main1, .main2, .main3 {
+        padding: 20px; /* Giảm padding trên màn hình nhỏ */
+    }
+
+    .td1, .td2, .td3 {
+        font-size: 1.6em; /* Giảm kích thước tiêu đề */
+        margin-bottom: 15px;
+    }
+
+    .td1::after, .td2::after, .td3::after {
+        width: 60px; /* Giảm độ dài đường kẻ */
+    }
+
+    .n1, .n2, .n3 {
+        font-size: 1em; /* Giảm kích thước chữ đoạn văn */
+        text-align: left; /* Có thể đổi về căn trái để dễ đọc hơn trên di động */
+    }
+}
+
+@media (max-width: 480px) {
+    .main1, .main2, .main3 {
+        padding: 15px;
+    }
+
+    .td1, .td2, .td3 {
+        font-size: 1.4em;
+    }
+}
